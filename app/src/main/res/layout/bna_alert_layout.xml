@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alert_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alert_header_background_color"
+    android:paddingBottom="@dimen/stroke_size">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/app_alert_header_height"
+        android:layout_marginStart="@dimen/stroke_size"
+        android:layout_marginTop="@dimen/stroke_size"
+        android:layout_marginEnd="@dimen/stroke_size"
+        android:background="@color/alert_header_background_color"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/app_alert_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/view_margins"
+            android:layout_marginTop="@dimen/view_margins"
+            android:layout_marginBottom="@dimen/view_margins"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_error_24" />
+
+        <TextView
+            android:id="@+id/app_alert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/app_alert_title"
+            android:textColor="@color/edit_text_hint_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/app_alert_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/app_alert_close_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/view_margins"
+            android:background="@drawable/close_alert_btn_shape"
+            android:padding="@dimen/app_alert_spacing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/alert_body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/alert_body_background_color"
+        android:orientation="vertical"
+        android:padding="@dimen/fragment_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout">
+
+        <TextView
+            android:id="@+id/app_alert_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/app_alert_buttons_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/alert_body_background_color"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/app_alert_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_body">
+
+        <Button
+            android:id="@+id/alert_btn_one"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_marginHorizontal="@dimen/app_alert_spacing"
+            android:layout_weight="1"
+            android:background="@drawable/alert_btn_shape"
+            android:text="@string/app_alert_no_button"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/alert_button_two"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/alert_button_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/app_alert_spacing"
+            android:layout_weight="1"
+            android:background="@drawable/alert_btn_shape"
+            android:maxWidth="80dp"
+            android:text="@string/app_alert_yes_button"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/alert_btn_one"
+            app:layout_constraintEnd_toStartOf="@+id/alert_btn_three"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/alert_btn_one"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/alert_btn_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/app_alert_spacing"
+            android:layout_weight="1"
+            android:background="@drawable/alert_negative_button"
+            android:text="@string/app_alert_cancel_button"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/alert_button_two"
+            app:layout_constraintTop_toTopOf="@+id/alert_button_two" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <size android:height="50dp" android:width="50dp"/>-->
+<!--    <solid android:color="@color/verified_sign_color"/>-->
+<!--&lt;!&ndash;    <stroke android:color="@color/white" android:width="@dimen/stroke_size"/>&ndash;&gt;-->
+<!--</shape>-->
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/verified_sign_color" />
+    <stroke
+        android:color="@color/white"
+        android:width="@dimen/stroke_size" />
+</shape>

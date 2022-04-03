@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_margins">16dp</dimen>
+    <dimen name="fragment_padding">16dp</dimen>
+    <dimen name="text_logo_margins">25dp</dimen>
+    <dimen name="view_constraints_horizental_margins">20dp</dimen>
+    <dimen name="edit_text_height">48dp</dimen>
+    <dimen name="buttons_height">48dp</dimen>
+    <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="btn_progress_height">40dp</dimen>
+    <dimen name="btn_progress_width">40dp</dimen>
+    <dimen name="step_circle_width">15dp</dimen>
+    <dimen name="step_circle_height">15dp</dimen>
+    <dimen name="stroke_size">3dp</dimen>
+    <dimen name="stroke_dash_gap">4dp</dimen>
+    <dimen name="stroke_dash_width">6dp</dimen>
+    <dimen name="text_size">16dp</dimen>
+    <dimen name="vaccin_pass_height">250dp</dimen>
+    <dimen name="vaccin_pass_width">500dp</dimen>
+    <dimen name="circular_button_height">60dp</dimen>
+    <dimen name="circular_button_width">60dp</dimen>
+    <dimen name="header_bar_height">80dp</dimen>
+    <dimen name="alert_holder_height">100dp</dimen>
+    <dimen name="ticketinfo_holder_height">100dp</dimen>
+    <dimen name="home_btns_height">150dp</dimen>
+    <dimen name="home_btns_corner_raduis">15dp</dimen>
+    <dimen name="home_btns_padding">20dp</dimen>
+    <dimen name="home_btns_image_height">70dp</dimen>
+    <dimen name="verified_sign_height">10dp</dimen>
+    <dimen name="verified_sign_width">10dp</dimen>
+    <dimen name="app_alert_spacing">5dp</dimen>
+    <dimen name="app_alert_header_height">50dp</dimen>
+</resources>

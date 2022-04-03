@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--     BNA Application colors-->
+    <color name="splash_background_color">#F1F1F1</color>
+    <color name="bna_green_color">#129539</color>
+    <color name="edit_text_strok_color">#159F19</color>
+    <color name="edit_text_bg_color">#296E8A12</color>
+    <color name="edit_text_hint_color">#004D40</color>
+    <color name="app_light_blue_color">#0088FF</color>
+    <color name="app_secondary_blue_color">#4D0087FE</color>
+    <color name="green_btn_gradient_start">#848E10</color>
+    <color name="green_btn_gradient_end">#D6B605</color>
+    <color name="alert_title_color">#F93D0D</color>
+    <color name="alert_text_color">#FC730A</color>
+    <color name="alert_warning_background_color">#FFCC00</color>
+    <color name="alert_error_background_color">#58B1F6</color>
+    <color name="alert_info_background_color">#60B3F4</color>
+    <color name="alert_stroke_color">#E1AF39</color>
+    <color name="verified_sign_color">#1877F2</color>
+    <color name="vaccin_passw_placeholder_color">#BDC68B</color>
+    <color name="alert_header_background_color">#84D3F6</color>
+    <color name="alert_body_background_color">#CFF0FF</color>
+    <color name="disabled_btn_bg_color">#CCC</color>
+    <color name="disabled_btn_text_color">#808080</color>
+    <color name="start_gradient_color_1_1">#AFFAC4</color>
+    <color name="end_gradient_color_1_1">#FDC4AD</color>
+
+    <color name="start_gradient_color_1_2">#A7F19D</color>
+    <color name="end_gradient_color_1_2">#C1D5F8</color>
+
+    <color name="start_gradient_color_2_1">#C1D5F8</color>
+    <color name="end_gradient_color_2_1">#CCE3CE</color>
+
+    <color name="start_gradient_color_2_2">#FCC5AD</color>
+    <color name="end_gradient_color_2_2">#C2D382</color>
+
+    <color name="start_gradient_color_3_1">#C2E0FC</color>
+    <color name="end_gradient_color_3_1">#B5E9C7</color>
+
+    <color name="start_gradient_color_3_2">#B5D7FB</color>
+    <color name="end_gradient_color_3_2">#C7DEB4</color>
+
+    <color name="app_header_start_color">#9FD8A4</color>
+    <color name="app_header_end_color">#EECBA2</color>
+
+    <color name="notification_fill_color">#EB1010</color>
+    <color name="invalid_bg_color">#29EB1010</color>
+
+</resources>

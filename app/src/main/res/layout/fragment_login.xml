@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".fragments.Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_logo_margins"
+        android:src="@drawable/bna_text_logo"
+        app:layout_constraintBottom_toTopOf="@+id/username_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        style="@style/common_blue_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/buttons_height"
+        android:layout_marginTop="@dimen/view_margins"
+        android:background="@drawable/login_signup_btn_shape"
+        android:text="@string/login_signup_link"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginLeft="@dimen/view_constraints_horizental_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_marginRight="@dimen/view_constraints_horizental_margins"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_baseline_person_green_24"
+        android:drawablePadding="@dimen/edit_text_padding"
+        android:ems="10"
+        android:hint="@string/signup_username_hint"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/edit_text_padding"
+        android:textColorHint="@color/edit_text_hint_color"
+        app:layout_constraintBottom_toTopOf="@+id/password_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginLeft="@dimen/view_constraints_horizental_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_marginRight="@dimen/view_constraints_horizental_margins"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="@dimen/edit_text_padding"
+        android:ems="10"
+        android:hint="@string/signup_password_hint"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/edit_text_padding"
+        android:textColorHint="#004D40"
+        app:layout_constraintBottom_toTopOf="@+id/remember_me_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_edittext" />
+
+    <CheckBox
+        android:id="@+id/remember_me_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margins"
+        android:text="@string/remember_me_label"
+        android:textColor="@color/bna_green_color"
+        android:textColorHint="@color/edit_text_hint_color"
+        android:textColorLink="@color/edit_text_strok_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/common_green_gradient_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/buttons_height"
+        android:layout_marginLeft="@dimen/view_constraints_horizental_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_marginRight="@dimen/view_constraints_horizental_margins"
+        android:text="@string/login_btn_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember_me_checkbox" />
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/btn_progress_width"
+        android:layout_height="@dimen/btn_progress_height"
+        android:layout_marginStart="@dimen/edit_text_padding"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:translationZ="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/login_btn"
+        app:layout_constraintStart_toStartOf="@+id/login_btn"
+        app:layout_constraintTop_toTopOf="@+id/login_btn"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

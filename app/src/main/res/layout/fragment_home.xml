@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".fragments.Home">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_bar_height"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/app_header_shape">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/donia"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/stroke_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_margins"
+                android:text="donia balgouthi"
+                android:textAllCaps="true"
+                android:textColor="@color/app_light_blue_color"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/stroke_size"
+                android:text="@string/rib_edittext"
+                android:textColor="@color/bna_green_color"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/profile_username"
+                app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+            <TextView
+                android:id="@+id/profile_rib"
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="023 1130 6587 68"
+                android:textColor="@color/bna_green_color"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:chainUseRtl="false"
+                app:guidelineUseRtl="false"
+                app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/stroke_size"
+                android:text="@string/agency_spinner_label"
+                android:textColor="@color/bna_green_color"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/profile_agency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="BNA Nassrallah"
+                android:textColor="@color/bna_green_color"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+            <ImageButton
+                android:id="@+id/notification_bell"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/circular_green_btn"
+                android:src="@drawable/ic_notifications_white_48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logout_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/logout_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circular_green_btn"
+                android:src="@drawable/ic_logout_white_48dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/verified_badge"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/verified_sign_shape"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+                app:layout_constraintEnd_toEndOf="@+id/profile_image" />
+
+            <ImageButton
+                android:id="@+id/verified_sign"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_done_white_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/verified_badge"
+                app:layout_constraintEnd_toEndOf="@+id/verified_badge"
+                app:layout_constraintStart_toStartOf="@+id/verified_badge"
+                app:layout_constraintTop_toTopOf="@+id/verified_badge" />
+
+            <TextView
+                android:id="@+id/notfication_count"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="-5dp"
+                android:background="@drawable/notification_count_shape"
+                android:gravity="center"
+                android:text="13"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/notification_bell"
+                app:layout_constraintTop_toTopOf="@+id/notification_bell" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/bna_green_color"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/bna_green_color"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/profile_agency"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+            <!--            <ImageView-->
+<!--                android:id="@+id/imageButton3"-->
+<!--                android:layout_width="@dimen/verified_sign_width"-->
+<!--                android:layout_height="@dimen/verified_sign_width"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:background="@drawable/verified_sign_shape"-->
+<!--                android:src="@drawable/ic_done_white_24dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/profile_image"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/profile_image"-->
+<!--                app:srcCompat="@drawable/ic_done_white_24dp" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/home_holder_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/fragment_padding">
+
+                    <LinearLayout
+                        android:id="@+id/notification_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/fragment_padding"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+                    <Button
+                        android:id="@+id/history_button"
+                        style="@style/common_home_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_height"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/view_margins"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shape_2_1"
+                        android:text="@string/history_button"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:layout_constraintEnd_toStartOf="@+id/contacts_button"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/service_req_btn" />
+
+                    <Button
+                        android:id="@+id/profile_button"
+                        style="@style/common_home_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_height"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/view_margins"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shape_3_1"
+                        android:text="@string/profile_btn"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:layout_constraintEnd_toStartOf="@+id/parameters_button"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/history_button" />
+
+                    <Button
+                        android:id="@+id/service_req_btn"
+                        style="@style/common_home_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_height"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/view_margins"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shape_1_1"
+                        android:gravity="bottom|center_horizontal"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="@string/home_service_req_btn"
+                        app:layout_constraintEnd_toStartOf="@+id/our_services_btn"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/notification_holder" />
+
+                    <Button
+                        android:id="@+id/our_services_btn"
+                        style="@style/common_home_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_height"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/shape_1_2"
+                        android:text="@string/our_service_btn"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="@+id/service_req_btn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/service_req_btn"
+                        app:layout_constraintTop_toTopOf="@+id/service_req_btn"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/parameters_button"
+                        style="@style/common_home_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_height"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/shape_3_2"
+                        android:text="@string/parameters_btn"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="@+id/profile_button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/profile_button"
+                        app:layout_constraintTop_toTopOf="@+id/profile_button"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/contacts_button"
+                        style="@style/common_home_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_height"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/shape_2_2"
+                        android:text="@string/contact_btn"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="@+id/history_button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/history_button"
+                        app:layout_constraintTop_toTopOf="@+id/history_button"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <LinearLayout
+                        android:id="@+id/ticketinfo_holder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/view_margins"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profile_button"></LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_image_height"
+                        android:src="@drawable/ic_baseline_business_center_24"
+                        android:translationZ="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/service_req_btn"
+                        app:layout_constraintEnd_toEndOf="@+id/service_req_btn"
+                        app:layout_constraintStart_toStartOf="@+id/service_req_btn"
+                        app:layout_constraintTop_toTopOf="@+id/service_req_btn"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_image_height"
+                        android:src="@drawable/ic_baseline_format_list_bulleted_24"
+                        android:translationZ="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/our_services_btn"
+                        app:layout_constraintEnd_toEndOf="@+id/our_services_btn"
+                        app:layout_constraintStart_toStartOf="@+id/our_services_btn"
+                        app:layout_constraintTop_toTopOf="@+id/our_services_btn"
+                        app:layout_constraintVertical_bias="0.30" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_image_height"
+                        android:src="@drawable/ic_baseline_history_24"
+                        android:translationZ="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/history_button"
+                        app:layout_constraintEnd_toEndOf="@+id/history_button"
+                        app:layout_constraintStart_toStartOf="@+id/history_button"
+                        app:layout_constraintTop_toTopOf="@+id/history_button"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_image_height"
+                        android:src="@drawable/ic_baseline_call_24"
+                        android:translationZ="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/contacts_button"
+                        app:layout_constraintEnd_toEndOf="@+id/contacts_button"
+                        app:layout_constraintStart_toStartOf="@+id/contacts_button"
+                        app:layout_constraintTop_toTopOf="@+id/contacts_button"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_image_height"
+                        android:src="@drawable/ic_baseline_person_24"
+                        android:translationZ="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/profile_button"
+                        app:layout_constraintEnd_toEndOf="@+id/profile_button"
+                        app:layout_constraintStart_toStartOf="@+id/profile_button"
+                        app:layout_constraintTop_toTopOf="@+id/profile_button"
+                        app:layout_constraintVertical_bias="0.3" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/home_btns_image_height"
+                        android:src="@drawable/ic_baseline_settings_24"
+                        android:translationZ="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/parameters_button"
+                        app:layout_constraintEnd_toEndOf="@+id/parameters_button"
+                        app:layout_constraintStart_toStartOf="@+id/parameters_button"
+                        app:layout_constraintTop_toTopOf="@+id/parameters_button"
+                        app:layout_constraintVertical_bias="0.3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

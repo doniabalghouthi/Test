@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/vaccin_pass_height" android:width="@dimen/vaccin_pass_width"/>
+    <solid android:color="@color/vaccin_passw_placeholder_color"/>
+    <corners android:radius="20dp"/>
+    <stroke android:color="@color/bna_green_color"
+        android:width="@dimen/stroke_size"
+        android:dashGap="@dimen/stroke_dash_gap"
+        android:dashWidth="@dimen/stroke_dash_width"/>
+</shape>

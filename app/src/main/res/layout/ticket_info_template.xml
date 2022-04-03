@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ticket_info_shape"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/fragment_padding">
+
+    <TextView
+        android:id="@+id/remained_ticket_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:text="04"
+        android:textColor="@color/app_light_blue_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/remainded_ticket_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/remainded_ticket_label"
+        android:textColor="@color/app_light_blue_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/remained_ticket_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/remained_ticket_number"
+        app:layout_constraintTop_toTopOf="@+id/remained_ticket_number" />
+
+    <TextView
+        android:id="@+id/your_ticket_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/stroke_dash_width"
+        android:text="@string/your_ticket_label"
+        android:textColor="@color/bna_green_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remained_ticket_number" />
+
+    <TextView
+        android:id="@+id/my_ticket_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="15"
+        android:textColor="@color/bna_green_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/your_ticket_label"
+        app:layout_constraintStart_toEndOf="@+id/your_ticket_label"
+        app:layout_constraintTop_toTopOf="@+id/your_ticket_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

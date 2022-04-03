@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/vaccin_pass_width"/>
+    <solid android:color="@color/vaccin_passw_placeholder_color"/>
+    <size android:width="@dimen/vaccin_pass_width" android:height="@dimen/edit_text_height"/>
+</shape>

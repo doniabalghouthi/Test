@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".fragments.SignUpTwo">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/fragment_padding">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/fragment_padding"
+                android:paddingBottom="@dimen/fragment_padding">
+
+                <ImageView
+                    android:id="@+id/bna_text_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bna_text_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/signup_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margins"
+                    android:text="@string/login_signup_link"
+                    android:textColor="@color/app_light_blue_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/bna_text_logo"
+                    app:layout_constraintHorizontal_bias="0.489"
+                    app:layout_constraintStart_toStartOf="@+id/bna_text_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/bna_text_logo" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margins"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/bna_text_logo"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="@+id/bna_text_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_label">
+
+                    <ImageView
+                        android:id="@+id/step2_circle_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/step_empty_circle" />
+
+                    <ImageView
+                        android:id="@+id/step2_circle_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_margins"
+                        android:layout_marginEnd="@dimen/view_margins"
+                        android:layout_weight="1"
+                        android:src="@drawable/step_filed_circle" />
+
+                    <ImageView
+                        android:id="@+id/step2_circle_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/step_empty_circle" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rib_label"
+                    style="@style/common_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rib_edittext"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <EditText
+                    android:id="@+id/signup_rib"
+                    style="@style/common_edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/signup_rib_hint"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/rib_label"
+                    app:layout_constraintTop_toBottomOf="@+id/rib_label" />
+
+                <TextView
+                    android:id="@+id/bank_label"
+                    style="@style/common_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank_spinner_label"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/not_bna_customer" />
+
+                <TextView
+                    android:id="@+id/agency_label"
+                    style="@style/common_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agency_spinner_label"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_town_spinner" />
+
+                <TextView
+                    android:id="@+id/birthday_label"
+                    style="@style/common_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/date_of_birth_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gender_radio_group" />
+
+                <EditText
+                    android:id="@+id/signup_birthday"
+                    style="@style/common_edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:hint="@string/signup_birthday_hint"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toStartOf="@+id/open_calendar_btn"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/birthday_label" />
+
+                <Button
+                    android:id="@+id/signup_two_previous_btn"
+                    style="@style/common_green_gradient_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/buttons_height"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/view_margins"
+                    android:background="@drawable/green_button_states"
+                    android:drawableStart="@drawable/ic_baseline_chevron_left_24"
+                    android:paddingStart="@dimen/edit_text_padding"
+                    android:paddingEnd="@dimen/edit_text_padding"
+                    android:text="@string/previous_btn_label"
+                    app:layout_constraintEnd_toStartOf="@+id/signup_two_next_btn"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_birthday" />
+
+                <Button
+                    android:id="@+id/signup_two_next_btn"
+                    style="@style/common_green_gradient_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/buttons_height"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginEnd="@dimen/view_constraints_horizental_margins"
+                    android:background="@drawable/green_button_states"
+                    android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                    android:enabled="false"
+                    android:paddingStart="@dimen/edit_text_padding"
+                    android:paddingEnd="@dimen/edit_text_padding"
+                    android:text="@string/next_btn"
+                    app:layout_constraintBottom_toBottomOf="@+id/signup_two_previous_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/signup_two_previous_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_birthday"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Spinner
+                    android:id="@+id/signup_bank_spinner"
+                    style="@style/common_edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:entries="@array/tunisian_banks"
+                    android:maxHeight="@dimen/buttons_height"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/bank_label"
+                    app:layout_constraintTop_toBottomOf="@+id/bank_label" />
+
+                <TextView
+                    android:id="@+id/signup_town_label"
+                    style="@style/common_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_signup_town_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_bank_spinner" />
+
+                <Spinner
+                    android:id="@+id/signup_town_spinner"
+                    style="@style/common_edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/signup_town_label"
+                    android:spinnerMode="dialog"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/signup_town_label"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_town_label" />
+
+                <Spinner
+                    android:id="@+id/signup_agency_spinner"
+                    style="@style/common_edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_marginStart="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/agency_label" />
+
+                <CheckBox
+                    android:id="@+id/not_bna_customer"
+                    style="@style/common_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/not_bna_customer_checkbox"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_rib" />
+
+                <RadioGroup
+                    android:id="@+id/gender_radio_group"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/buttons_height"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_agency_spinner">
+
+                    <RadioButton
+                        android:id="@+id/signup_male_radio"
+                        style="@style/common_bna_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/view_constraints_horizental_margins"
+                        android:checked="true"
+                        android:text="@string/male_gender_label" />
+
+                    <RadioButton
+                        android:id="@+id/signup_female_radio"
+                        style="@style/common_bna_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/view_constraints_horizental_margins"
+                        android:text="@string/female_gender_label" />
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/open_calendar_btn"
+                    android:layout_width="@dimen/buttons_height"
+                    android:layout_height="@dimen/buttons_height"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circular_green_btn"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_calendar_today_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/signup_birthday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.3"
+                    app:layout_constraintStart_toEndOf="@+id/signup_birthday"
+                    app:layout_constraintTop_toTopOf="@+id/signup_birthday" />
+
+                <ImageView
+                    android:id="@+id/not_bna_customer_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_help_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/not_bna_customer"
+                    app:layout_constraintEnd_toEndOf="@+id/not_bna_customer"
+                    app:layout_constraintTop_toTopOf="@+id/not_bna_customer" />
+
+                <ImageView
+                    android:id="@+id/twon_label_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_help_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/signup_town_label"
+                    app:layout_constraintEnd_toEndOf="@+id/signup_town_label"
+                    app:layout_constraintTop_toTopOf="@+id/signup_town_label" />
+
+                <ImageView
+                    android:id="@+id/agency_label_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_help_24"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/agency_label"
+                    app:layout_constraintEnd_toEndOf="@+id/agency_label"
+                    app:layout_constraintTop_toTopOf="@+id/agency_label" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="copyright_text" translatable="false">Développé par Donia pour BNA tous droits réservés $date</string>
+    <string name="login_user_edittext_hint">Nom d\'utilisateur*</string>
+    <string name="login_password_edittext_hint">Mot de passe*</string>
+    <string name="remember_me_label">Souviens-toi de moi</string>
+    <string name="login_signup_link">S\'inscrire</string>
+    <string name="login_btn_text">Connexion</string>
+    <string name="app_name" translatable="false">BNA</string>
+    <string name="signup_name_edittext">Nom*</string>
+    <string name="family_name_edittext">Nom de famille*</string>
+    <string name="cin_edittext">CIN*</string>
+    <string name="full_address_edittext">Adresse complète</string>
+    <string name="mobile_edittext">Mobile</string>
+    <string name="next_btn">Suivant</string>
+    <string name="rib_edittext">RIB*</string>
+    <string name="not_bna_customer_checkbox">Je ne suis pas un client BNA</string>
+    <string name="bank_spinner_label">Banque*</string>
+    <string name="agency_spinner_label">Agence (BNA)*</string>
+    <string name="male_gender_label">Homme</string>
+    <string name="female_gender_label">Femme</string>
+    <string name="date_of_birth_label">Date de naissance</string>
+    <string name="confirm_password_label">Confirmez le mot de passe*</string>
+    <string name="vaccination_pass_label">Passe vaccinale</string>
+    <string name="register_btn_label">S\'inscrire</string>
+    <string name="previous_btn_label">Précédent</string>
+    <!-- declaration of array containing the list of tunisian banks -->
+    <array name="tunisian_banks">
+        <item>Choisir votre banque</item>
+        <item>Société Tunisienne de Banque « STB »</item>
+        <item>Banque de l’Habitat « BH »</item>
+        <item>Banque de Financement des Petites et Moyennes entreprises « BFPME »</item>
+        <item>Banque Tunisienne de Solidarité « BTS »</item>
+        <item>Banque de Tunisie et des Emirats « BTE »</item>
+        <item>Tunisian Saudi Bank « TSB »</item>
+        <item>Banque Zitouna</item>
+        <item>Al Baraka Bank</item>
+        <item>Al Wifak International Bank</item>
+        <item>Amen Bank</item>
+        <item>Attijari Bank</item>
+        <item>Arab Tunisian Bank « ATB »</item>
+        <item>Arab Banking Corporation « ABC »</item>
+        <item>Banque Internationale Arabe de Tunisie «  BIAT »</item>
+        <item>Banque de Tunisie « BT »</item>
+        <item>Banque Tuniso Koweitienne « BTK »</item>
+        <item>Banque Franco Tunisienne « BFT »</item>
+        <item>Citi Bank</item>
+        <item>Qatar National Bank- Tunis « QNB-Tunis »</item>
+        <item>Union Bancaire de Commerce et d’Industrie «  UBCI »</item>
+        <item>Union Internationale de Banque «  UIB »</item>
+    </array>
+    <string name="parameters_btn">Paramètres</string>
+    <string name="profile_btn">Profil</string>
+    <string name="contact_btn">Contacts</string>
+    <string name="history_button">Historique</string>
+    <string name="our_service_btn">Nos services</string>
+    <string name="home_service_req_btn">Demande de service</string>
+    <string name="app_alert_title">Alerte</string>
+    <string name="remainded_ticket_label">Clients en attente</string>
+    <string name="your_ticket_label">Votre billet est :</string>
+    <string name="app_alert_ok_btn">Ok</string>
+    <string name="app_alert_no_button">Non</string>
+    <string name="app_alert_cancel_button">Annuler</string>
+    <string name="app_alert_yes_button">Oui</string>
+    <string name="app_alert_confirm_btn">Confirmer</string>
+    <string name="app_ipmsum_text_exemple">D\'où est ce que ça vient? Contrairement à la croyance populaire, le Lorem Ipsum n\'est pas simplement un texte aléatoire. Il a ses racines dans un morceau de littérature latine classique de 45 avant JC, ce qui le rend vieux de plus de 2000 ans. Richard McClintock, professeur de latin au Hampden-Sydney College en Virginie, a recherché l\'un des mots latins les plus obscurs, consectetur, à partir d\'un passage du Lorem Ipsum, et en parcourant les citations du mot dans la littérature classique, a découvert la source indubitable. Lorem Ipsum provient des sections 1.10.32 et 1.10.33 de \"de Finibus Bonorum et Malorum\" (Les extrêmes du bien et du mal) de Cicéron, écrit en 45 av. Ce livre est un traité sur la théorie de l\'éthique, très populaire à la Renaissance. La première ligne de Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", vient d\'une ligne de la section 1.10.32.</string>
+    <string name="app_progress_loader_text">Chargement...</string>
+    <string name="app_signup_town_label">Ville* (Votre ville actuelle)</string>
+    <string name="signup_name_hint">Ecrire votre nom ici</string>
+    <string name="signup_cin_hint">Ecrire votre cin ici</string>
+    <string name="signup_familyname_hint">Ecrire votre prénom ici</string>
+    <string name="signup_mobile_hint">Ecrire votre n° de mobile ici</string>
+    <string name="signup_fulladdress_hint">Ecrire votre adresse complète</string>
+    <string name="signup_username_hint">Ecrire votre nom d\'utilisateur ici</string>
+    <string name="signup_password_hint">Écrire votre mot de passe ici</string>
+    <string name="signup_password_confirmation_hint">Confirmer votre mot de passe</string>
+    <string name="signup_rib_hint">Ecrire votre n° de compte ici</string>
+    <string name="signup_birthday_hint">Cliquer sur le calendrier</string>
+    <string name="mondator_fileds_alert_title">Champs obligatoires</string>
+    <string name="mondator_fileds_alert_message">Remplissez tous les champs obligatoires</string>
+    <string name="bna_agency_help">Choisissez l\'agence BNA que vous y demander de service</string>
+    <string name="not_bna_customer_help">Cliquez sur je ne suis pas un client BNA dans le cas où vous etes inscrit chez une autre banque et choisissez la.</string>
+    <string name="bna_town_help">Choisissez votre ville actuelle, la ville où se trouve l\'agence BNA que vous demander service.</string>
+    <string name="help_label">Aide</string>
+    <string name="password_mismatch_message">" Le mot de passe ne correspond pas au mot de passe de confirmation."</string>
+</resources>

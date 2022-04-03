@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">BNA</string>
+    <string name="copyright_text">Developed by Donia for BNA all rights reserved $date</string>
+    <string name="login_user_edittext_hint">Username*</string>
+    <string name="login_password_edittext_hint">Password*</string>
+    <string name="remember_me_label">Remember me</string>
+    <string name="login_signup_link">Sign up</string>
+    <string name="login_btn_text">Login</string>
+    <string name="signup_name_edittext">Name*</string>
+    <string name="family_name_edittext">Family name*</string>
+    <string name="cin_edittext">CIN*</string>
+    <string name="full_address_edittext">Full address</string>
+    <string name="mobile_edittext">Mobile</string>
+    <string name="next_btn">Next</string>
+    <string name="rib_edittext">RIB*</string>
+    <string name="not_bna_customer_checkbox">Not BNA customer</string>
+    <string name="bank_spinner_label">Bank*</string>
+    <string name="agency_spinner_label">Agency (BNA)*</string>
+    <string name="male_gender_label">Male</string>
+    <string name="female_gender_label">Female</string>
+    <string name="date_of_birth_label">Date of birth</string>
+    <string name="confirm_password_label">Confirm password*</string>
+    <string name="vaccination_pass_label">Vaccination pass</string>
+    <string name="register_btn_label">Register</string>
+    <string name="previous_btn_label">Previous</string>
+    <!-- declaration of array containing the list of tunisian banks -->
+    <array name="tunisian_banks">
+        <item>Choisir votre banque</item>
+        <item>Société Tunisienne de Banque « STB »</item>
+        <item>Banque de l’Habitat « BH »</item>
+        <item>Banque de Financement des Petites et Moyennes entreprises « BFPME »</item>
+        <item>Banque Tunisienne de Solidarité « BTS »</item>
+        <item>Banque de Tunisie et des Emirats « BTE »</item>
+        <item>Tunisian Saudi Bank « TSB »</item>
+        <item>Banque Zitouna</item>
+        <item>Al Baraka Bank</item>
+        <item>Al Wifak International Bank</item>
+        <item>Amen Bank</item>
+        <item>Attijari Bank</item>
+        <item>Arab Tunisian Bank « ATB »</item>
+        <item>Arab Banking Corporation « ABC »</item>
+        <item>Banque Internationale Arabe de Tunisie « BIAT »</item>
+        <item>Banque de Tunisie « BT »</item>
+        <item>Banque Tuniso Koweitienne « BTK »</item>
+        <item>Banque Franco Tunisienne « BFT »</item>
+        <item>Citi Bank</item>
+        <item>Qatar National Bank- Tunis « QNB-Tunis »</item>
+        <item>Union Bancaire de Commerce et d’Industrie « UBCI »</item>
+        <item>Union Internationale de Banque « UIB »</item>
+    </array>
+    <string name="home_service_req_btn">Service request</string>
+    <string name="our_service_btn">Our services</string>
+    <string name="history_button">History</string>
+    <string name="contact_btn">Contacts</string>
+    <string name="profile_btn">Profile</string>
+    <string name="parameters_btn">Parameters</string>
+    <string name="app_alert_title">Alert</string>
+    <string name="remainded_ticket_label">Client waiting</string>
+    <string name="your_ticket_label">Your ticket is:</string>
+    <string name="app_alert_ok_btn">Ok</string>
+    <string name="app_alert_no_button">No</string>
+    <string name="app_alert_cancel_button">Cancel</string>
+    <string name="app_alert_yes_button">Yes</string>
+    <string name="app_alert_confirm_btn">Confirm</string>
+    <string name="app_ipmsum_text_exemple">Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</string>
+    <string name="app_progress_loader_text">Loading...</string>
+    <string name="app_signup_town_label">Town* (The current town)</string>
+    <string name="signup_name_hint">Write your name here</string>
+    <string name="signup_cin_hint">Write your cin here</string>
+    <string name="signup_familyname_hint">Write your first name here</string>
+    <string name="signup_mobile_hint">Write your mobile number here</string>
+    <string name="signup_fulladdress_hint">Write your full address</string>
+    <string name="signup_username_hint">Write your username here</string>
+    <string name="signup_password_hint">Write your password here</string>
+    <string name="signup_password_confirmation_hint">Confirm your password</string>
+    <string name="signup_rib_hint">Write your account number here</string>
+    <string name="signup_birthday_hint">Click on the calendar</string>
+    <string name="mondator_fileds_alert_title">Mandatory fields</string>
+    <string name="mondator_fileds_alert_message">Fill all mandatory fields</string>
+    <string name="bna_agency_help">Choose the BNA branch you are requesting service from there</string>
+    <string name="not_bna_customer_help">Click on I am not a BNA customer if you are with another bank and choose it.</string>
+    <string name="bna_town_help">Choose your current city, the city where the BNA branch you are requesting service is located.</string>
+    <string name="help_label">Help</string>
+    <string name="password_mismatch_message">The password mismatch with confirm password.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

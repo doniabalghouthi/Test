@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="copyright_text" translatable="false">"طورة هذا التطبيق دنيا للبنك الوطني الفلاحي. كل الحقوق محفوظة  $date "</string>
+    <string name="login_user_edittext_hint">اسم المستخدم*</string>
+    <string name="login_password_edittext_hint">كلمة المرور*</string>
+    <string name="remember_me_label">حفظ معلومات الاتصال</string>
+    <string name="login_signup_link">اشتراك</string>
+    <string name="login_btn_text">تسجيل الدخول</string>
+    <string name="app_name">BNA</string>
+    <string name="full_address_edittext">العنوان الكامل</string>
+    <string name="next_btn">التالي</string>
+    <string name="male_gender_label">ذكر</string>
+    <string name="female_gender_label">أنثى</string>
+    <string name="date_of_birth_label">تاريخ الولادة</string>
+    <string name="confirm_password_label">تأكيد كلمة المرور*</string>
+    <string name="signup_name_edittext">الاسم*</string>
+    <string name="family_name_edittext">اللقب*</string>
+    <string name="cin_edittext">ب.ت.و*</string>
+    <string name="mobile_edittext">رقم الجوال</string>
+    <string name="rib_edittext">رقم الحساب*</string>
+    <string name="not_bna_customer_checkbox">لست حريف عند البنك الوطني الفلاحي</string>
+    <string name="register_btn_label">إشترك</string>
+    <string name="vaccination_pass_label">جواز التلقيح</string>
+    <string name="agency_spinner_label">الوكالة (البنك الفلاحي)*</string>
+    <string name="bank_spinner_label">البنك*</string>
+    <string name="previous_btn_label">السابق</string>
+    <!-- declaration of array containing the list of tunisian banks -->
+    <array name="tunisian_banks">
+        <item>اختر البنك الذي تتعامل معه</item>
+        <item>الشركة التونسية للبنك « STB »</item>
+        <item>بنك الاسكان « BH »</item>
+        <item>بنك تمويل الشركات الصغرى والمتوسطة « BFPME »</item>
+        <item>بنك التضامن « BTS »</item>
+        <item>بنك تونس و الامارات « BTE »</item>
+        <item>البنك التونسي السعودي « TSB »</item>
+        <item>بنك الزيتونة</item>
+        <item>بنك البركة</item>
+        <item>بنك الوفاق</item>
+        <item>بنك الأمان</item>
+        <item>التجاري بنك</item>
+        <item>البنك العربي التونسي « ATB »</item>
+        <item>بنك التعاون العربي « ABC »</item>
+        <item>البنك الدولي العربي التونسي « BIAT »</item>
+        <item>البنك التونسي « BT »</item>
+        <item>البنك التونسي الكويتي « BTK »</item>
+        <item>البنك الفرنسي التونسي « BFT »</item>
+        <item>سيتي بنك</item>
+        <item>البنك القطري التونسي « QNB-Tunis »</item>
+        <item>الاتحاد البنكي للصناعة و التجارة « UBCI »</item>
+        <item>الاتحاد الدولي للبنوك « UIB »</item>
+    </array>
+    <string name="history_button">أرشيف</string>
+    <string name="parameters_btn">الاعدادت</string>
+    <string name="profile_btn">الملف الشخصي</string>
+    <string name="contact_btn">جهات الاتصال</string>
+    <string name="our_service_btn">خدماتنا</string>
+    <string name="home_service_req_btn">طلب خدمة</string>
+    <string name="app_alert_title">إشعار</string>
+    <string name="remainded_ticket_label">حرفاء في الانتظار</string>
+    <string name="your_ticket_label">رقم تذكرتك هو:</string>
+    <string name="app_alert_confirm_btn">تأكيد</string>
+    <string name="app_alert_yes_button">نعم</string>
+    <string name="app_alert_no_button">كلا</string>
+    <string name="app_alert_ok_btn">موافق</string>
+    <string name="app_alert_cancel_button">إلغاء</string>
+    <string name="app_ipmsum_text_exemple">حيث أنها لا تأتي من؟ خلافًا للاعتقاد الشائع ، فإن Lorem Ipsum ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي من 45 قبل الميلاد ، مما يجعلها أكثر من 2000 عام. قام ريتشارد مكلينتوك ، الأستاذ اللاتيني في كلية هامبدن سيدني في فيرجينيا ، بالبحث عن واحدة من أكثر الكلمات اللاتينية غموضًا ، consectetur ، من مقطع لوريم إيبسوم ، وتصفح اقتباسات الكلمة في الأدب الكلاسيكي ، اكتشف المصدر الذي لا شك فيه. يأتي لوريم إيبسوم من الأقسام 1.10.32 و 1.10.33 من \"de Finibus Bonorum et Malorum\" (أقصى الخير والشر) بقلم شيشرون ، الذي كتبه عام 45 قبل الميلاد. هذا الكتاب عبارة عن أطروحة حول نظرية الأخلاق ، وقد حظيت بشعبية كبيرة خلال عصر النهضة. السطر الأول من Lorem Ipsum ، \"Lorem ipsum dolor sit amet ..\" ، يأتي من سطر في القسم 1.10.32.</string>
+    <string name="app_progress_loader_text">جار التحميل...</string>
+    <string name="app_signup_town_label">الولاية* (مدينتك الحالية)</string>
+    <string name="signup_name_hint">اكتب اسمك هنا</string>
+    <string name="signup_cin_hint">اكتب  رقم ب.ت.و هنا</string>
+    <string name="signup_familyname_hint">اكتب  اللقب هنا</string>
+    <string name="signup_mobile_hint">اكتب رقم هاتفك المحمول هنا</string>
+    <string name="signup_fulladdress_hint">اكتب عنوانك الكامل</string>
+    <string name="signup_username_hint">اكتب اسم المستخدم الخاص بك هنا</string>
+    <string name="signup_password_hint">اكتب كلمة المرور الخاصة بك هنا</string>
+    <string name="signup_password_confirmation_hint">تأكيد كلمة المرور</string>
+    <string name="signup_rib_hint">اكتب رقم حسابك هنا</string>
+    <string name="signup_birthday_hint">انقر على زر التقويم</string>
+    <string name="mondator_fileds_alert_title">الحقول الضرورية</string>
+    <string name="mondator_fileds_alert_message">املأ جميع الحقول الإلزامية</string>
+    <string name="bna_agency_help">اختر فرع البنك الوطني الفلاحي الذي تطلب الخدمة منه</string>
+    <string name="not_bna_customer_help">انقر فوق أنا لست عميل BNA إذا كنت تعمل مع بنك آخر واختره.</string>
+    <string name="bna_town_help">اختر مدينتك الحالية ، المدينة التي يقع فيها فرع البنك الوطني الفلاحي الذي تطلب الخدمة فيه.</string>
+    <string name="help_label">مساعدة</string>
+    <string name="password_mismatch_message">كلمة المرور غير متطابقة مع تأكيد كلمة المرور.</string>
+</resources>
